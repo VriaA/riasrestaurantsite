@@ -1,0 +1,176 @@
+export const pizzaMenu = [
+    {
+        name: 'Margherita',
+        cartName: 'Margherita Pizza',
+        PizzaImage: "images/margherita_pizza.svg",
+        toppings:'Tomato sauce, mozzarella cheese, Parmesan cheese, fresh basil, and extra virgin olive oil.',
+        size: '',
+        smallPrice: 5,
+        mediumPrice: 11,
+        largePrice: 17,
+        price: 0,
+        originalPrice: 0,
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '0ec8f0d9-453a-4e5c-908b-8e5e1ea443fc'
+    },
+    {
+        name: 'Pepperoni',
+        cartName: 'Pepperoni Pizza',
+        PizzaImage: 'images/pepperoni_pizza.svg',
+        toppings:'Tomato sauce, mozzarella cheese, and pepperoni.',
+        size: '',
+        smallPrice: 8,
+        mediumPrice: 14,
+        largePrice: 20,
+        price: 0,
+        originalPrice: 0,
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '4231f777-1cf3-4496-ba24-2fe55018eadc'
+    },
+    {
+        name: 'Tomato Special',
+        cartName: 'Tomato Special Pizza',
+        PizzaImage: "images/tomato_pizza.svg",
+        toppings: 'Cherry tomatoes, black olives, mozzarella cheese, and basil.',
+        size: '',
+        smallPrice: 10,
+        mediumPrice: 16,
+        largePrice: 22,
+        price: 0,
+        originalPrice: 0,
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: 'cc75a504-63c5-4535-bf6f-cead612c1b4f'
+    }
+]
+
+export const burgerMenu = [
+    {
+        name: "Ria's Classic Beef",
+        cartName: "Ria's Classic Beef Burger",
+        burgerImage: "images/classic_beef_burger.svg",
+        toppings:'Beef patty, sauce, cheddar cheese, lettuce, tomatoes, pickles and onions.',
+        initialPrice: 5.55,
+        price: 5.55,
+        originalPrice: 5.55,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: 'a96a30d3-f7c1-44f3-b97e-2d06ee784432'
+    },
+    {
+        name: 'Premier Chicken',
+        cartName: 'Premier Chicken Burger',
+        burgerImage: 'images/premier_chicken_burger.svg',
+        toppings:'Two chicken patties, ham, mustard, ketchup, cheddar cheese, lettuce, pickles and sauce.',
+        initialPrice: 10,
+        price: 10,
+        originalPrice: 10,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '55f22c12-b3da-4f32-9566-11e28f392773'
+    },
+    {
+        name: 'Black Turkey',
+        cartName: 'Black Turkey Burger',
+        burgerImage: "images/black_turkey_burger.svg",
+        toppings: 'Turkey patty, bacon, cheddar cheese, ketchup, lettuce, pickles, onions and sauce.',
+        initialPrice: 8.95,
+        price: 8.95,
+        originalPrice: 8.95,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '28711b40-5dd5-4541-8da0-f82d01139121'
+    },
+]
+
+export const drinkMenu = [
+    {
+        name: "Chocolate Frappe",
+        cartName: 'Chocolate Frappe',
+        drinkImage: "images/chocolate_frappe.svg",
+        initialPrice: 3.39,
+        price: 3.39,
+        originalPrice: 3.39,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '94108a60-e346-4a9f-8c73-c7df8cba32ef'
+    },
+    {
+        name: 'Vanilla and Cranberry Shake',
+        cartName: 'Vanilla and Cranberry Shake',
+        drinkImage: 'images/vanilla_and_cranberry_shake.svg',
+        initialPrice: 4,
+        price: 4,
+        originalPrice: 4,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '7760af88-3039-4980-b7a1-4008ad13bf3f'
+    },
+    {
+        name: 'Iced Latte',
+        cartName: 'Iced Latte',
+        drinkImage: "images/iced_latte.svg",
+        initialPrice: 2.41,
+        price: 2.41,
+        originalPrice: 2.41,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: 'baca1dfb-60ef-424f-a3fb-448794970740'
+    },
+    {
+        name: "Green Juice",
+        cartName: 'Green Juice',
+        drinkImage: "images/green_juice.svg",
+        initialPrice: 3,
+        price: 3,
+        originalPrice: 3,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '05840396-89e4-404e-ab8b-27c0c79cc1db'
+    },
+    {
+        name: 'Iced Coke',
+        cartName: 'Iced Coke',
+        drinkImage: 'images/iced_coke.svg',
+        initialPrice: 1.95,
+        price: 1.95,
+        originalPrice: 1.95,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: '3e602a8e-f05a-4353-9234-9e331a2a27c1'
+    },
+    {
+        name: 'Water',
+        cartName: 'Water',
+        drinkImage: "images/water.svg",
+        initialPrice: 1.89,
+        price: 1.89,
+        originalPrice: 1.89,
+        size: '',
+        count: 0,
+        discountClass: '',
+        originalClass: '',
+        uuid: 'c99f44f7-788b-4e9f-9e4d-90c7e5dbd4a6'
+    }
+]

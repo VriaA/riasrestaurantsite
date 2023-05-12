@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ria's | Drinks Menu</title>
+        <link rel="icon" type="image/png" href="images/pizza_favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body class="menu-body" id="body">
+        <header class="menu-header" id="header">
+            <h1 class="restaurant-name restaurant-name-menu">Ria's</h1>
+            <div class="modes-toggle-cntr">
+                <div class="modes-toggle">
+                    <div class="light-cntr"><span class="material-symbols-outlined light modes">light_mode</span> </div>
+                    <input type="checkbox" id="mode-checkbox" class="mode-checkbox">
+                    <label for="mode-checkbox" class="toggle" id="toggle"></label>
+                    <div class="dark-cntr"><span class="material-symbols-outlined dark modes">dark_mode</span> </div>
+                </div>
+            </div>
+
+            <div class="cart-and-page-name">
+                <div class="cart-icon-cntr">
+                    <p class="cart-item-num" id="cart-item-num"></p>
+                    <span id="cart-icon" class="material-symbols-outlined cart-icon" title="Cart">
+                            shopping_cart
+                    </span>
+                </div>
+                <h2 class="header-menu menu-main">DRINKS</h2>
+            </div>
+        </header>
+        <div class="cart-cntr" id="cart-cntr">
+
+        </div>
+
+        <main class="menu-items-cntr" id="menu">
+            <div class="drinks-cntr" id="drinks-cntr">
+
+            </div>
+        </main>
+
+        <div class="contact-details-cntr" id="contact-details-cntr">
+    
+            <form class="contact-details" id="contact-details">
+                <span class="material-symbols-outlined close-modal close-contact-form" id="close-contact-form" title="Close">
+                    close
+                </span>
+                <fieldset class="contact-details-fieldset" id="contact-details-fieldset">
+                    <legend class="contact-details-heading">Contact Details</legend>
+                    <label for="first-name" class="firstName-label contact-labels">First Name: 
+                        <input type="text" id="first-name" class="firstName-input contact-inputs" name="firstName" required>
+                    </label>
+
+                    <label for="last-name" class="lastName-label contact-labels">Last Name: 
+                        <input type="text" id="last-name" class="lastName-input contact-inputs" name="lastName" required>
+                    </label>
+
+                    <label for="phone-number" class="phoneNumber-label contact-labels">Phone Number: 
+                        <input type="number" id="phone-number" class="phoneNumber-input contact-inputs" name="phoneNumber" required>
+                    </label>
+                    
+                    <label for="shipping-address" class="shippingAddress-label contact-labels">Shipping Address:</label>
+                        <textarea  id="shipping-address" class="shippingAddress-input contact-inputs" name="shippingAddress" rows="5" required></textarea>
+
+                    <label for="is-same-address" class="isSameAddress-label contact-labels">Same as Billing Address
+                        <input type="checkbox" id="is-same-address" class="isSameAddress-input contact-inputs" name="isSameAddress" disabled>
+                        <span class="visible-checkbox isSameAddress-checkbox"></span>
+                    </label>
+                    
+                    <label for="billing-address" class="billingAddress-label contact-labels">Billing Address:</label>
+                        <textarea  id="billing-address" class="billingAddress-input contact-inputs" name="billingAddress" rows="5" required></textarea>
+                </fieldset>
+
+                <button type="submit" id="save-contact-btn" class="save-contact-btn">Confirm</button>
+            </form>
+        </div>
+
+        <aside class="goto-main-menu" id="goto-main-menu" title="Main Menu">
+           <a href="main_menu.html">
+            <i class="fa-solid fa-arrow-left left-arrow" id="left-arrow"></i>
+            </a>
+        </aside>
+
+        <script src="https://kit.fontawesome.com/cc4f2f6008.js" crossorigin="anonymous"></script>
+        <script src="drinks.js" type="module"></script>
+        <script src="cart.js" type="module"></script>
+    </body>
+
+</html>

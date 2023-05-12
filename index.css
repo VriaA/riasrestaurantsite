@@ -1,0 +1,1425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* BROWSER RESET FROM http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-item-cntr, .total-and-payment-cntr, .empty-cart-message,
+.checkout-btn, .save-contact-btn, .pay-btn, .drink-title, 
+.size-selection-cntr, .size-selection-heading, .select-size-control, .add-pizza-to-cart,
+.contact-details-heading, .contact-labels, .contact-inputs, .payment-inputs {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.home-subtext, .cart-item-num, .cart-item-info, .recieved-message, .cancel-order-btn {  
+    font-family: 'Roboto', sans-serif;
+}
+
+body, .modes-toggle, .home-img-cntr, .menu-body,
+.menu-item-cntr, .cart-icon-cntr, .cart-item-prices,
+.payment-methods, .add-burger-icons, .drink-cntr, 
+.add-drink-icons, .selected-item, .contact-labels, 
+.card-details-form, .order-recieved {
+    position: relative;
+}
+
+.start-order-btn-cntr, .modes-toggle-cntr, .toggle, .home-cntr, .home-img,
+.restaurant-name, .home-subtext, .menu-item-title, .restaurant-name-menu,
+.cart-and-page-name, .cart-item-num, .cart-cntr, .visible-checkbox,
+.cancel-order-cntr-1024, .add-to-cart, .add-burger-icons, .drink-info,
+.add-drink-icons-cntr, .add-drink-icons, .add-cart-icon, .done-adding,
+.burger-price, .size-selection-modal, .close-modal, .selected-item-price,
+.contact-details-cntr, .firstName-input, .lastName-input, .phoneNumber-input,
+.cancel-payment-cntr, .order-recieved-cntr {
+    position: absolute;
+}
+
+.contact-details, .contact-details-fieldset, .payment, 
+.card-details-form, .card-details-form > fieldset, 
+.order-recieved, .body-home, .start-order-btn-cntr,
+.size-options, .menu-item-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home, .main-menu-items-cntr, .cart-item-prices, 
+.remove-item-cntr, .visible-checkbox, .empty-cart-message, .add-drink-icons,
+.add-to-cart, .add-burger-icons, .goto-main-menu, .add-drink-icons-cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-body, .cart, .cart-items-cntr, 
+.cart-item, .cart-item-quatity-control, 
+.drink-cntr, .selected-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu-items-1024, .cart-cntr, .cancel-order-cntr-1024, 
+.done-adding, .size-selection-modal, .contact-details-cntr, .payment,
+.order-recieved-cntr, .recieved-message, .done-cntr {
+    display: none;
+}
+
+body, .modes-toggle, .body-home, .start-order-btn-cntr,
+.home-cntr, .home-img-cntr, .home-img, .menu-header,
+.main-menu-header, .main-home, .main-menu-items-cntr, 
+.menu-items-cntr, .main-menu-items, .menu-items, 
+.cart-and-page-name, .cart-cntr, .cart-items-cntr, 
+.cart-item-name, .cart-item-info, .cart-buttons-cntr, 
+.total-and-payment-cntr, .empty-cart-message, .drinks-cntr,
+.size-selection-modal, .size-selection-heading, .contact-details-cntr,
+.contact-details-fieldset, .payment, .order-recieved-cntr{
+    width: 100%;
+}
+
+.home-cntr, .menu-items, .cart-item-prices, .contact-details-cntr,
+.cart-item-quatity-control, .size-selection-modal {
+    height: 100%;
+}
+
+.payment, .order-recieved-cntr, .home-img-cntr {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+.toggle, .start-order-btn, .menu-item-cntr, .cart-item-num,
+.checkout-btn, .save-contact-btn, .pay-btn, .drink-cntr,
+.add-pizza-to-cart, .cancel-payment-cntr {
+    background: #bc6c25;
+}
+
+.cart-item-quantity, .cart-buttons, .cancel-order-btn,
+ .add-burger-icons, .goto-main-menu, .contact-details,
+ .contact-details-fieldset, .contact-inputs, .payment-inputs{
+    background: none;
+}
+
+.modes, .cancel-order-mobile, .restaurant-name-menu, .cart-and-page-name,
+.your-cart-heading, .card-details-form, .order-recieved, .cart-item-name,
+.cart-item-quantity, .cart-buttons, .total-price-cntr, .cancel-order-btn,
+.fa-arrow-left, .left-arrow:hover, .size-selection-cntr, .close-modal,
+.size-selection-heading, .select-size-control, .add-pizza-to-cart, 
+.contact-details-fieldset, .cancel-payment-cntr:hover {
+    color: #bc6c25;
+}
+
+.start-order-btn, .home-img-cntr, .menu-item-cntr, .cart-item-num,
+.cart-buttons:hover, .checkout-btn, .save-contact-btn, .pay-btn,
+.add-to-cart, .add-burger-icons, .drink-cntr, .add-pizza-to-cart {
+    color: #f5f5f5;
+}
+
+.modes-toggle-cntr, .menu-header, .main-menu-header, 
+.cart, .size-selection-cntr, .cart-item, .cart-buttons,
+.visible-checkbox, .cancel-order-cntr-1024, .contact-inputs, 
+.payment-inputs, .done-cntr{
+    border: 1px solid #bc6c25;
+}
+
+.toggle, .restaurant-name, .cart-item-num, .cart-buttons,
+.add-to-cart, .add-burger-icons, .goto-main-menu, .done-cntr,
+.add-drink-icons-cntr, .add-drink-icons, .close-modal,
+.cancel-order-cntr-mobile, .goto-main-menu, .cancel-payment-cntr {
+    border-radius: 50%;
+}
+
+.pizzas:hover, .burgers:hover, .drinks:hover, .cart, .menu-item-cntr,
+.drink-cntr, .size-selection-cntr, .card-details-form, .order-recieved,
+.payment-inputs {
+    border-radius: 24px;
+}
+
+.home-subtext, .cart-item-quantity, .contact-details-heading, 
+.payment-heading, .expiry-date, .cvv, .recieved-message, .done-cntr { 
+    text-align: center;
+}
+
+.cart-icon:hover, .start-order-btn, .cancel-order-cntr-mobile,
+.goto-main-menu, .cancel-payment-cntr, .pizzas:hover, 
+.burgers:hover, .drinks:hover, .cancel-order-btn:hover, .toggle,
+.add-drink-icons-cntr:hover, .add-to-cart:hover, .remove-cart-item:hover,
+.cart-buttons, .payment-methods, .visible-checkbox, .checkout-btn, 
+.save-contact-btn, .pay-btn, .add-to-cart, .add-burger-icons, .close-modal{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    background: none;
+    width: 5px;
+    z-index: 50;
+    cursor: pointer;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb {
+    visibility: visible;
+    height: 100px;
+    background: #bc6b25b0;
+}
+
+.modes-toggle-cntr {
+    width: 50px;
+    height: 25px;
+    top: 5px;
+    right: 3%;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.modes-toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+}
+
+.toggle {
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
+}
+
+.modes {
+    font-size: 15px;
+}
+
+.light {
+    margin: 0 0 0 5px;
+}
+
+.dark {
+    margin: 0 5px 0 0;
+}
+
+.home-cntr {
+    top: 0;
+    transition: 1s all ease;
+    z-index: 10;
+}
+
+.home-img-cntr {
+    display: flex;
+    justify-content: center;
+    transition: 2s transform ease;
+    z-index: 12;  
+}
+
+.home-img {
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
+    top: 0;
+    background: #000;
+    background: url(images/burger_small.jpg);
+    background-repeat: no-repeat;
+    background-size: 190% 100%;
+    background-position-x: -160px;
+    border-radius: 0 0 50% 50%;
+    filter: grayscale(.2) brightness(.9);
+    z-index: 13;
+}
+
+.restaurant-name {
+    top: 25%;
+    font-family: 'Parisienne', cursive;
+    height: 113px;
+    width: 113px;
+    line-height: 113px;
+    border: 3px solid #f5f5f5;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.restaurant-name-home, .home-subtext {
+    z-index: 14;
+}
+
+.home-subtext {
+    width: 140px;
+} 
+.home-subtext{
+    top: 75%;
+    font-size: 1rem;
+    font-weight: 300;
+    text-shadow: 0 0 1px #000;
+}
+
+.subtext-food {
+    font-weight: 500;
+}
+
+.start-order-btn-cntr {
+    top: 93vh;
+    top: calc(var(--vh, 1vh) * 93);
+    display: flex;
+    transition: 1s display ease;
+    z-index: 12;
+}
+
+.start-order-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 0 1px #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: .5s transform ease;
+    z-index: 3;
+}
+
+.start-order-btn, .cancel-order-btn, .checkout-btn, .save-contact-btn, .pay-btn {
+    border: none;
+    outline: none;
+}
+
+.start-order-btn:hover, .start-order-btn:active,.add-pizza-to-cart:hover {
+    background: #835a36;
+}
+
+.start-order-btn:active, .checkout-btn:active, .save-contact-btn:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 4px #fad643;
+}
+
+.menu-header, .main-menu-header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 32vh;
+    height: calc(var(--vh, 1vh) * 32);
+    border-top: 0;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 5;
+}
+
+.header-menu {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+.main-menu-items-cntr, .menu-items-cntr{
+    margin-top: 32vh;
+    margin-top: calc(var(--vh, 1vh) * 32);
+    height: fit-content;
+    z-index: 1;
+}
+
+.main-menu-items, .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-menu-items-mobile { 
+    margin: 20px 0 0 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item-cntr {
+    margin-top: 20px;
+    width: 310px;
+    height: 200px;
+}
+
+.pizzas:hover, .burgers:hover, .drinks:hover {
+    box-shadow: -1px -2px 0px #2222223b;
+    transition: .5s transform ease;
+    transform: translateY(2px);
+}
+
+.menu-item-title {
+    top: 20px;
+    right: 20px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 0 0;
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.cancel-order-cntr-mobile, .goto-main-menu {
+    position: fixed;
+}
+
+.cancel-order-cntr-mobile, .goto-main-menu, .cancel-payment-cntr:hover {
+    background-color: #b3b3b342;
+}
+
+.cancel-order-cntr-mobile, .goto-main-menu, .cancel-payment-cntr {
+    display: flex;
+    align-items: center; justify-content: center;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    z-index: 9;
+}
+
+.cancel-order-mobile {
+    font-weight: 100;
+    font-size: 2.6rem;
+    z-index: 9;
+}
+
+.cancel-order-cntr-mobile:hover {
+    background: #f5f5f51a;
+}
+
+.restaurant-name-menu {
+    inset: 0;
+    margin: 6% auto 0 auto;
+    font-size: 2.5rem;
+    height: 92px;
+    width: 92px;
+    font-weight: 100;
+    line-height: 92px;
+    border: 2px solid #bc6c25;
+}
+
+.cart-and-page-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 10px;
+    padding: 0 5%;
+}
+
+.cart-icon{
+    font-size: 2.2rem;
+}
+
+.cart-item-num {
+    display: flex;
+    justify-content: center;
+    top: -7px;
+    right: 0;
+    min-width: 20px;  
+    height: 20px; 
+    line-height: 20px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.cart-icon:hover {
+    font-variation-settings:
+    'FILL' 1
+}
+
+.cart-cntr {
+    top: 0;
+    min-height: 100%;
+    max-height: fit-content;
+    z-index: 20;
+}
+
+.cart {
+    margin: auto;
+    margin-top: 70px;
+    padding: 30px 0;
+    width: 90%;
+    min-height: 430px;
+}
+
+.your-cart-heading {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.cart-item {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.cart-item-name {
+    font: 900 14.7px/25px 'Quicksand', sans-serif;
+    height: 25px;
+    text-align: left;
+    text-shadow: 0px 0px 1px #bc6c25;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.cart-item-prices {
+    width: 130px;
+}
+
+.cart-item-price {
+    display: inline-block;
+    width: 65px;
+    font-size: 16px;
+    color: #27A327;
+    margin-right: 5px;
+}
+.original {
+    visibility: hidden;
+}
+
+.discounted-price, .remove-cart-item:hover {
+    color: #ff0000;
+}
+.discounted-price {
+    visibility: visible;
+    text-decoration: line-through;
+}
+
+.original-price {
+    visibility: visible;
+}
+
+.cart-item-quatity-control {
+    justify-content: center;
+    width: 70px;
+    padding: 0;
+}
+
+.cart-buttons-cntr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.remove-item-cntr {
+    font-size: 10px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.remove-cart-item:hover {
+    transition: .2s all ease-in-out;
+}
+
+.cart-item-quantity {
+    width: 30px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 0px;
+    padding: 7px 5px;
+    font-size: 16px;
+    font-weight: 100;
+    transition: .2s all ease-in-out;
+}
+.decrease-cart-item {
+    padding: 6px 0 8px 0;
+}
+
+.cart-buttons:hover {
+    background: #bc6b25;
+}
+
+.cart-buttons:active, .remove-cart-item:active {
+    transform: translateY(2px);
+}
+
+.total-and-payment-cntr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.payment-methods-cntr {
+    width: 48%;
+    margin-left: 10%;
+    text-align: left;
+    z-index: 20;
+}
+
+.payment-method {
+    font-size: .8rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.payment-methods {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+[type=checkbox] {
+    visibility: hidden;
+}
+
+.visible-checkbox {
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+[type=checkbox]:checked + .visible-checkbox {
+ background: #BC6C25;
+}
+
+[type=checkbox]:checked + .visible-checkbox::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 8px;
+    bottom: 4px;
+    border-width: 0 0 2px 2px;
+    border-color:#f5f5f5;
+    border-style: solid;
+    transform: rotate(-55deg);
+}
+
+.empty-cart-message {
+    height: 200px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 600;
+}
+
+.total-price-cntr {
+    width: 50%;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.total {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.total-price {
+    font-weight: 400;
+}
+
+.checkout-btn, .save-contact-btn, .pay-btn{
+    margin-top: 40px;
+    padding: 7px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: .2s all ease-in-out;
+}
+
+.checkout-btn:hover, .save-contact-btn:hover{
+    background: #a35d20;
+}
+
+.cancel-order-cntr-1024 {
+    justify-self: center;
+    padding: .5%;
+    border-bottom: 0;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    background: #b3b3b33f;
+    text-decoration: none;
+}
+
+.cancel-order-cntr-1024:hover {
+    background: #f5f5f51a;
+}
+
+.cancel-order-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+.add-to-cart, .add-burger-icons {
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    background: #f5f5f51a;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.add-burger-icons {
+    bottom: 0;
+    right: 0;
+}
+
+.add-to-cart:hover {
+    background: #61616136;
+}
+
+.goto-main-menu {
+    width: 40px;
+    height: 40px;
+    left: 5px;
+    right: 0px;
+    z-index: 10;
+}
+
+.goto-main-menu:hover {
+    background: #61616136;
+}
+
+.goto-main-menu  > a {
+    display: block;
+}
+
+.fa-arrow-left {
+    font-size: 2rem;
+}
+
+.drinks-cntr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    height: fit-content;
+    padding: 25px;
+}
+
+.drink-cntr {
+    width: 130px;
+    height: 160px;
+    margin-bottom: 25px;
+}
+
+.drink-info {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    padding: 0 10px;
+    background: #4a4948d0;  
+    font-size: .8rem;
+    border-radius: 0 0 24px 24px;
+}
+
+.drink-title {
+    width: 110px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: left;
+    font-size: .6rem;
+}
+.drink-price {
+    font-size: .8rem;
+    color: #fff;
+}
+
+.add-drink-icons-cntr, .add-drink-icons {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.add-drink-icons {
+    top: 0;
+    right: 0;
+}
+
+.add-to-cart, .add-drink-icons-cntr, .add-burger-icons, .cart-icon, .close-modal {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.drink-price, .burger-price {
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.burger-price {
+    top: 22px;
+    left: 20px;
+    font-size: 1rem;
+}
+
+.add-drink-icons-cntr:hover  {
+    background: #61616136;
+}
+
+.size-selection-modal {
+    top: 0;
+    background: #E2E2E2;
+    z-index: 11;
+}
+
+.size-selection-cntr {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    margin-top: 160px;
+}
+.close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 20px; left: 20px;
+    font-size: 1.7rem;
+    z-index: 20;
+}
+
+.close-modal:hover {
+    background: #b3b3b33f;
+}
+
+.size-selection-heading {
+    padding: 0 10px 0 0;
+    text-align: right;
+    font-size: 1.3rem;
+    margin: 30px 0;
+}
+
+.size-selection-heading, .add-pizza-to-cart {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.size-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 1%;
+    font-size: .9rem;
+}
+
+.selected-item {
+    width: fit-content;
+}
+
+.selected-item-price {
+    bottom: 20px;
+    font-weight: 500;
+    text-shadow: 0 0 #000;
+}
+
+.size-options-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    height: 204px;
+}
+
+.size-options {
+    align-items: start;
+    margin-top: 20px;
+    accent-color: #bc6c25;
+    font-weight: 400;
+    text-shadow: 0 0 #000;
+}
+
+.size-option {
+    text-align: left;
+}
+
+.select-size-control, .add-pizza-to-cart {
+    border: 1px solid #ee8a32;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-pizza-to-cart  {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    opacity: .7;
+}
+
+.close-contact-form {
+    top: 5px; left: 5px;
+}
+
+.contact-details-cntr {
+    top: 0;
+    z-index: 80;
+}
+
+.contact-details {
+    margin: 0 auto;
+}
+
+.contact-details-fieldset {
+    margin-top: 35px;
+}
+
+.contact-details-heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#is-same-address {
+    margin-left: 10px;
+}
+
+.payment-heading {
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-labels {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-inputs, .payment-inputs {
+    padding-left: 20px;
+    outline: none;
+}
+
+.contact-inputs {
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.firstName-input, .lastName-input, .phoneNumber-input {
+    right: 0;
+    width: 60%;
+    height: 21px;
+}
+
+.billingAddress-input, .shippingAddress-input {
+    width: 70%;
+    margin-left: 65px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.shippingAddress-input, .isSameAddress-label {
+    margin-bottom: 5px;
+}
+
+.isSameAddress-label {
+    width: 90%;
+}
+
+.isSameAddress-checkbox {
+    right: 41.4%;
+    top: 5px;
+}
+
+.save-contact-btn {
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+.payment, .order-recieved-cntr {
+    z-index: 0;
+}
+
+.card-details-form, .card-details-form > fieldset {
+    width: 300px;
+}
+.card-details-form, .order-recieved{
+    justify-content: flex-start;
+    padding: 35px 0 20px;
+    height: fit-content;
+    box-shadow: 0 10px 30px #686868;
+    z-index: 1;
+}
+
+.payment-heading {
+    margin-bottom: 35px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.payment-inputs {
+    font-size: 1rem;
+    width: 80%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+/* TO HIDE ARROWS FROM NUMBER 
+INPUT FOR PASSWORD LENGTH   */
+.card-number::-webkit-outer-spin-button,
+.card-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card-number {
+appearance: textfield;
+-moz-appearance: textfield;
+}
+.expiry-and-cvv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.expiry-date {
+    width: 140px;
+} 
+
+.cvv, .expiry-date {
+    padding: 0;
+}
+
+.cvv {
+    width: 90px;
+}
+
+.pay-btn {
+    width: 100px;
+    margin-top: 0;
+}
+
+.cancel-payment-cntr {
+    left: 0;
+    top: 0;
+    border-radius: 24px 0 24px 0;
+    height: 40px;
+    width: 30px;
+    color: #eed9b9;
+}
+
+.order-recieved-cntr {
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 5;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.order-recieved {
+    width: 300px;
+    height: 340px;
+    z-index: 6;
+}
+
+.recieved-message {
+    padding: 0 20px;
+    margin-top: 40px;
+    transition: 1.5s display ease;
+}
+
+.payment-loader {
+    margin: auto 0;
+}
+
+.customer-name {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.done-cntr {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    line-height: 100px;
+}
+
+.done-symbol {
+    font-size: 5rem;
+    font-weight: 100;
+}
+@media screen and (min-width: 375px) {
+    .menu-header, .main-menu-header {
+        width: 95%;
+    }
+    .cart {
+        width: 80%;
+    }
+    .size-info {
+        padding: 0 2%;
+    }
+    .isSameAddress-checkbox {
+        right: 51%;
+        top: 5px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .home-img {
+        background: url(images/burger.jpg);
+        background-repeat: no-repeat;
+        background-size: 120% 100%;
+        background-position: 0 0%;
+    }    
+    .main-menu-items-cntr, .menu-items-cntr{
+        min-height: 68vh;
+        height: calc(var(--vh, 1vh) *  68);
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-menu-items-cntr {
+        padding-top: 20px;
+    }
+    .main-menu-items-mobile {
+        margin-top: 10px;
+    }
+
+    .main-menu-items-mobile:first-of-type {
+        margin-right: 20px;
+    }
+
+    .restaurant-name-home {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 4rem;
+    }
+
+    .home-subtext {
+        top: 75%;
+        width: fit-content;
+        font-size: 1.1rem;
+    }
+
+    .drinks-cntr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-bottom: 0;
+    }
+    .drink-cntr, .drink-info {
+        width: 160px;
+    }
+    .drink-title {
+        width: 130px;
+        font-size: .7rem;
+    }
+    .size-selection-modal {
+        background: #222222b3 !important;
+    }
+    .size-selection-cntr {
+        position: relative;
+        padding-top: 20px;
+        width: 40%;
+        height: fit-content;
+        border: none;
+    }
+    .size-info {
+        font-size: 1rem;
+    }
+    .close-modal {
+        top: 5px;
+        left: 5px;
+    }
+
+    .cart-cntr {
+        display: none;
+        width: 290px;
+        top: 32vh;
+        top: calc(var(--vh, 1vh) *  32);
+        left: 5%;
+        min-height: 100px;
+        max-height: 100px;
+        border-radius: 0 0 24px 24px;
+        z-index: 4;
+    }
+
+    .cart {
+        width: 100%;
+        position: relative;
+        padding: 10px 0;
+        height: 100px;
+        overflow-y: scroll;
+        margin-top: 0;
+        border-top: none;
+        border-radius: 0 0 24px 24px;
+        background: #e7e6e6;
+    }
+
+    .your-cart-heading {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+
+    .cart-item {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .cart-item, .cart-item-price, .cart-item-name {
+        font-size: .9rem;
+    }
+    .cart-item-info {
+        margin-top: 5px;
+    }
+
+    .cart-item-quatity-control {
+        width: 22%;
+    }
+    .cart-item-quantity{
+        width: 20px;
+        height: 15px;
+        text-align: center;
+    }
+    
+    .cart-buttons {
+        width: 13px;
+        height: 0;
+        padding: 6px 2.5px;
+    }
+    .decrease-cart-item {
+        padding: 5.5px 0 6.5px 0;
+    }
+
+    .contact-details-cntr {
+        background: #2222227e !important;
+    }
+
+    .close-contact-form {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 24px 0 24px 0;
+        height: 40px;
+        width: 30px;
+        background: #bc6c25;
+        color: #eed9b9;
+    }
+
+    .close-contact-form:hover {
+        color: #bc6b25;
+    }
+
+    .contact-details {
+        position: relative;
+        inset: 0;
+        margin: auto;
+        width: 50%;
+        height: 95vh;
+        margin-top: 2.5vh;
+        border-radius: 24px;
+    }
+    
+    .contact-details-fieldset {
+        padding: 0 0 0 20px;
+    }
+
+    .payment-methods-cntr {
+        font-size: .7rem;
+    }
+
+    .total-price-cntr {
+        font-size: 1.1rem;
+    }
+
+    .checkout-btn {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home-img {
+        background: url(images/burger.jpg);
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        background-position: 0 40%;
+    }
+    .restaurant-name-menu {
+        font-size: 3rem
+    }
+
+    .restaurant-name-menu {
+        margin-top: 3%;
+        height: 113px; width: 113px; line-height: 113px;
+    }
+
+    .cancel-order-cntr-mobile, .main-menu-items-mobile {
+        display: none;
+    }
+
+    .cancel-order-cntr-1024 {
+        display: block;
+        z-index: 9;
+    }
+
+    .main-menu-items-1024 {
+        display: inline-block;
+    }
+
+    .main-menu-items {
+        justify-content: space-evenly;
+    }
+
+    .menu-item-cntr {
+        width: 320px;
+        height: 260px;
+        margin: 0;
+    }
+    .menu-item-cntr:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .menu-item-title, .add-to-cart, .add-burger-icons {
+        font-size: 2rem;
+    }
+    .item-info {
+        font-size: 1rem;
+    }
+
+    .add-to-cart, .add-burger-icons { 
+        width: 40px;
+        height: 40px;
+        font-weight: 100;
+    }
+
+    .drinks-cntr {
+        width: 100%;
+    }
+    .drink-cntr, .drink-info {
+        width: 180px;
+    }
+
+    .drink-info {
+        height: 42px;
+    }
+
+    .drink-title {
+        width: 150px;
+        font-size: .9rem;
+    }
+
+    .burger-price {
+        top: 80%;
+        left: 20px;
+        font-size: 1.5rem;
+    }
+    .size-selection-cntr, .contact-details {
+        width: 30%;
+    }
+    .size-selection-cntr {
+        height: 50%;
+    }
+    .checkout-btn {
+        margin: 20px 0 20px;
+    }
+    .cart-cntr {
+        width: 330px;
+    }
+    .cart, .cart-cntr {
+        min-height: 380px;
+        max-height: 380px;
+    }
+    .payment-methods-cntr {
+        width: 45%;
+    }
+    .total-price-cntr {
+        width: 55%;
+    }
+    .cart-buttons {
+        width: 13px;
+        padding: 7.25px 2.5px 5.35px 2.5px;
+    }
+    .decrease-cart-item {
+        padding: 5px 0 7.5px 0;
+    }
+}

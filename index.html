@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Ria's Restaurant App | Home</title>
+        <link rel="icon" type="image/png" href="images/pizza_favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body id="body" class="body-home">
+
+            <header class="main-menu-header" id="header">
+                <h2 class="restaurant-name restaurant-name-menu">Ria's</h2>
+                
+                <div class="modes-toggle-cntr">
+                    <div class="modes-toggle">
+                        <div class="light-cntr"><span class="material-symbols-outlined light modes">light_mode</span> </div>
+                        <input type="checkbox" id="mode-checkbox" class="mode-checkbox">
+                        <label for="mode-checkbox" class="toggle" id="toggle"></label>
+                        <div class="dark-cntr"><span class="material-symbols-outlined dark modes">dark_mode</span> </div>
+                    </div>
+                </div>
+
+                <div class="cart-and-page-name">
+                    <div class="cart-icon-cntr">
+                        <p class="cart-item-num" id="cart-item-num"></p>
+                        <span id="cart-icon" class="material-symbols-outlined cart-icon" title="Cart">
+                            shopping_cart
+                        </span>
+                    </div>
+                    <h2 class="header-menu menu-main">MENU</h2>
+                </div>
+            </header>
+
+            <div class="cart-cntr" id="cart-cntr">
+
+            </div>
+
+            <div class="home-cntr" id="home-cntr">
+                    <section class="home-img-cntr" id="home-img-cntr"> 
+                        <h1 class="restaurant-name restaurant-name-home">Ria's</h1>
+                        <div class="home-img"></div>
+                        <h2 class="home-subtext">Home of the best <span class="subtext-food">burgers</span> and <span class="subtext-food">pizzas.</span></h2>
+                    </section>
+
+                    <div id="start-order" class="start-order-btn-cntr">
+                    <button type="button" class="start-order-btn" id="start-order-btn">Start Order</button>
+                    </div>
+                </div>
+
+
+                <main id="main-home" class="main-home">
+                    <div class="main-menu-items-cntr" id="main-menu-home">
+                    <div class="main-menu-items" id="menu">
+                        <a class="main-menu-items-mobile" href="pizzas.html"><img class="pizzas" id="pizzas_mobile" src="images/pizzas_mobile.svg" title="Pizza Menu"></a>
+                        <a class="main-menu-items-mobile" href="burgers.html"><img class="burgers" id="burgers_mobile" src="images/burgers_mobile.svg" title="Burger Menu"></a>
+                        <a class="main-menu-items-mobile" href="drinks.html"><img class="drinks" id="drinks_mobile" src="images/drinks_mobile.svg" title="Drink Menu"></a>
+
+                        <a href="pizzas.html"><img class="pizzas main-menu-items-1024" id="pizzas" src="images/pizzas.svg" title="Pizza Menu"></a>
+                        <a class="main-menu-items-1024" href="burgers.html"><img class="burgers" id="burgers" src="images/burgers.svg" title="Burger Menu"></a>
+                        <a class="main-menu-items-1024" href="drinks.html"><img class="drinks" id="drinks" src="images/drinks.svg" title="Drink Menu"></a>
+                    </div>
+                    </div>
+
+                    <div class="contact-details-cntr" id="contact-details-cntr">
+                        <form class="contact-details" id="contact-details" action="https://instagram.com" method="post">
+                            <span class="material-symbols-outlined close-modal close-contact-form" id="close-contact-form" title="Close">
+                                close
+                            </span>
+                            <fieldset class="contact-details-fieldset" id="contact-details-fieldset">
+                                <legend class="contact-details-heading">Contact Details</legend>
+                                <label for="first-name" class="firstName-label contact-labels">First Name: 
+                                    <input type="text" id="first-name" class="firstName-input contact-inputs" name="First Name" required>
+                                </label>
+            
+                                <label for="last-name" class="lastName-label contact-labels">Last Name: 
+                                    <input type="text" id="last-name" class="lastName-input contact-inputs" name="Last Name" required>
+                                </label>
+            
+                                <label for="phone-number" class="phoneNumber-label contact-labels">Phone Number: 
+                                    <input type="number" id="phone-number" class="phoneNumber-input contact-inputs" name="Phone Number" required>
+                                </label>
+                                
+                                <label for="shipping-address" class="shippingAddress-label contact-labels">Shipping Address:</label>
+                                    <textarea  id="shipping-address" class="shippingAddress-input contact-inputs" name="Shipping Address" rows="5" required></textarea>
+            
+                                <label for="is-same-address" class="isSameAddress-label contact-labels">Same as Billing Address
+                                    <input type="checkbox" id="is-same-address" class="isSameAddress-input contact-inputs" name="isSameAddress" disabled>
+                                    <span class="visible-checkbox isSameAddress-checkbox"></span>
+                                </label>
+                                
+                                <label for="billing-address" class="billingAddress-label contact-labels">Billing Address:</label>
+                                    <textarea  id="billing-address" class="billingAddress-input contact-inputs" name="Billing Address" rows="5" required></textarea>
+                            </fieldset>
+            
+                            <button type="submit" id="save-contact-btn" class="save-contact-btn">Confirm</button>
+                        </form>
+                    </div>
+                    
+                <div class="cancel-order-cntr-mobile" id="goto-main-menu">
+                    <span class="material-symbols-outlined cancel-order-mobile" id="cancel-order-mobile" title="Cancel Order">
+                    close
+                    </span>
+                </div>
+
+                <div class="cancel-order-cntr-1024" id="cancel-order-cntr">
+                    <button class="cancel-order-btn" id="cancel-order-1024">Cancel order</button>
+                </div>
+        </main>
+
+        <script src="https://kit.fontawesome.com/cc4f2f6008.js" crossorigin="anonymous"></script>
+        <script src="index.js" type="module"></script>
+        <script src="cart.js" type="module"></script>
+    </body>
+</html>
