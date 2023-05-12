@@ -447,7 +447,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 
 .restaurant-name-menu {
     inset: 0;
-    margin: 6% auto 0 auto;
+    margin: 15% auto 0 auto;
     font-size: 2.5rem;
     height: 92px;
     width: 92px;
@@ -1153,6 +1153,9 @@ appearance: textfield;
         background-size: 120% 100%;
         background-position: 0 0%;
     }    
+    .menu-header, .main-menu-header {
+        height: 210px;
+    }
     .main-menu-items-cntr, .menu-items-cntr{
         min-height: 68vh;
         height: calc(var(--vh, 1vh) *  68);
@@ -1178,7 +1181,10 @@ appearance: textfield;
         line-height: 150px;
         font-size: 4rem;
     }
-
+    .restaurant-name-menu {
+        margin-top: 3%;
+        height: 113px; width: 113px; line-height: 113px;
+    }
     .home-subtext {
         top: 75%;
         width: fit-content;
@@ -1219,8 +1225,7 @@ appearance: textfield;
     .cart-cntr {
         display: none;
         width: 290px;
-        top: 32vh;
-        top: calc(var(--vh, 1vh) *  32);
+        top: 211px;
         left: 5%;
         min-height: 100px;
         max-height: 100px;
@@ -1328,13 +1333,9 @@ appearance: textfield;
         background-size: 100%;
         background-position: 0 40%;
     }
-    .restaurant-name-menu {
-        font-size: 3rem
-    }
 
     .restaurant-name-menu {
-        margin-top: 3%;
-        height: 113px; width: 113px; line-height: 113px;
+        font-size: 3rem
     }
 
     .cancel-order-cntr-mobile, .main-menu-items-mobile {
