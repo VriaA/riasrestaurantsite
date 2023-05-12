@@ -40,6 +40,8 @@ if( (savedMode !== 'light') && (window.matchMedia && window.matchMedia('prefers-
     modeToggle.style.transition = 'none'
 } else if (savedMode === 'light') {
     lightMode()  
+} else {
+    lightMode()
 }
 
 //SWITCHES PAGE THEME BETWEEN LIGHT AND DARK WHEN A TOGGLE IS CLICKED

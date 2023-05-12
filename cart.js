@@ -50,7 +50,10 @@ if(window.matchMedia && window.matchMedia('prefers-color-scheme-dark').matches) 
     modeToggle.style.transition = 'none'
 } else if (savedMode === 'light') {
     lightMode()  
+} else {
+    lightMode()
 }
+
 
 //SWITCHES BETWEEN LIGHT AND DARK MODE WHEN A TOGGLE IS CLICKED
 document.addEventListener('click', e=>{
