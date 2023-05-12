@@ -58,13 +58,13 @@ table {
 }
 
 .menu-item-cntr, .total-and-payment-cntr, .empty-cart-message,
-.checkout-btn, .save-contact-btn, .pay-btn, .drink-title, 
+.checkout-btn, .save-contact-btn, .pay-btn, .drink-title, .home-subtext, 
 .size-selection-cntr, .size-selection-heading, .select-size-control, .add-pizza-to-cart,
 .contact-details-heading, .contact-labels, .contact-inputs, .payment-inputs {
     font-family: 'Quicksand', sans-serif;
 }
 
-.home-subtext, .cart-item-num, .cart-item-info, .recieved-message, .cancel-order-btn {  
+.cart-item-num, .cart-item-info, .recieved-message, .cancel-order-btn {  
     font-family: 'Roboto', sans-serif;
 }
 
@@ -300,17 +300,16 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 .home-subtext{
     top: 70%;
     font-size: 1rem;
-    font-weight: 300;
-    text-shadow: 0 0 1px #000;
-}
-
-.subtext-food {
     font-weight: 500;
 }
 
+.subtext-food {
+    font-weight: 700;
+}
+
 .start-order-btn-cntr {
-    top: 85vh;
-    top: calc(var(--vh, 1vh) * 85);
+    top: 88vh;
+    top: calc(var(--vh, 1vh) * 88);
     display: flex;
     transition: 1s display ease;
     z-index: 12;
