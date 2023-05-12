@@ -280,7 +280,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .restaurant-name {
-    top: 25%;
+    top: 29%;
     font-family: 'Parisienne', cursive;
     height: 113px;
     width: 113px;
@@ -298,7 +298,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
     width: 140px;
 } 
 .home-subtext{
-    top: 75%;
+    top: 70%;
     font-size: 1rem;
     font-weight: 300;
     text-shadow: 0 0 1px #000;
@@ -309,8 +309,8 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .start-order-btn-cntr {
-    top: 90vh;
-    top: calc(var(--vh, 1vh) * 90);
+    top: 85vh;
+    top: calc(var(--vh, 1vh) * 85);
     display: flex;
     transition: 1s display ease;
     z-index: 12;
