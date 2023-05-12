@@ -849,6 +849,10 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
     height: 300px;
     margin-top: 160px;
 }
+
+.size-option-label {
+    margin-bottom: 5px;
+}
 .close-modal {
     display: flex;
     align-items: center;
