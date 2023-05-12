@@ -1157,6 +1157,7 @@ appearance: textfield;
         height: 210px;
     }
     .main-menu-items-cntr, .menu-items-cntr{
+        top: 210px;
         min-height: 68vh;
         height: calc(var(--vh, 1vh) *  68);
         padding: 0;
