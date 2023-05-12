@@ -266,8 +266,8 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .home-img {
-    height: 90vh;
-    height: calc(var(--vh, 1vh) * 90);
+    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     top: 0;
     background: #000;
     background: url(images/burger_small.jpg);
@@ -309,8 +309,8 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .start-order-btn-cntr {
-    top: 93vh;
-    top: calc(var(--vh, 1vh) * 93);
+    top: 90vh;
+    top: calc(var(--vh, 1vh) * 90);
     display: flex;
     transition: 1s display ease;
     z-index: 12;
