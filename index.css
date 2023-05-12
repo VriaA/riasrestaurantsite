@@ -964,8 +964,8 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
     align-items: center;
     font-size: .8rem;
     width: 90%;
-    height: 25px;
-    margin-bottom: 20px;
+    height: 30px;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 
@@ -982,7 +982,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 .firstName-input, .lastName-input, .phoneNumber-input {
     right: 0;
     width: 60%;
-    height: 21px;
+    height: 30px;
 }
 
 .billingAddress-input, .shippingAddress-input {
