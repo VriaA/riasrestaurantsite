@@ -1159,8 +1159,6 @@ appearance: textfield;
 
     .main-menu-items-cntr, .menu-items-cntr{
         top: 210px !important;
-        min-height: 68vh;
-        height: calc(var(--vh, 1vh) *  68);
         padding: 0;
         display: flex;
         align-items: center;
@@ -1334,6 +1332,11 @@ appearance: textfield;
         background-repeat: no-repeat; 
         background-size: 100%;
         background-position: 0 40%;
+    }
+
+    .main-menu-items-cntr, .menu-items-cntr {   
+        min-height: 68vh;
+        height: calc(var(--vh, 1vh) *  68);
     }
 
     .restaurant-name-menu {
