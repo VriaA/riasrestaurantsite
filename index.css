@@ -81,8 +81,7 @@ body, .modes-toggle, .home-img-cntr, .menu-body,
 .cart-and-page-name, .cart-item-num, .cart-cntr, .visible-checkbox,
 .cancel-order-cntr-1024, .add-to-cart, .add-burger-icons, .drink-info,
 .add-drink-icons-cntr, .add-drink-icons, .add-cart-icon, .done-adding,
-.burger-price, .close-modal, .selected-item-price,
-.contact-details-cntr, .firstName-input, .lastName-input, .phoneNumber-input,
+.burger-price, .close-modal, .selected-item-price, .firstName-input, .lastName-input, .phoneNumber-input,
 .cancel-payment-cntr, .order-recieved-cntr {
     position: absolute;
 }
@@ -932,6 +931,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .contact-details-cntr {
+    position: fixed;
     top: 0;
     z-index: 80;
 }
