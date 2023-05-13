@@ -188,7 +188,7 @@ function getCartItems() {
                                 <form class="cart-item-quatity-control">
                                     <div class="cart-buttons-cntr">
                                     <button type="button" class="add-cart-item cart-buttons" id="add-${cartItem.cartUuid}" data-add="${cartItem.cartUuid}">+</button>
-                                    <input type="number" id="cart-item-quantity" class="cart-item-quantity" value="${cartItem.count}" disabled>
+                                    <input type="number" class="cart-item-quantity" value="${cartItem.count}" disabled>
                                     <button type="button" class="decrease-cart-item cart-buttons" id="decrease-cart-item" data-deduct="${cartItem.cartUuid}">-</button>
                                     </div>
                                     
