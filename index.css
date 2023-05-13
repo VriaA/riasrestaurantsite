@@ -57,7 +57,7 @@ table {
     box-sizing: border-box;
 }
 
-.menu-item-cntr, .total-and-payment-cntr, .empty-cart-message,
+.menu-item-cntr, .total-and-payment-cntr, .empty-cart-message, .start-order-btn,
 .checkout-btn, .save-contact-btn, .pay-btn, .drink-title, .home-subtext, 
 .size-selection-cntr, .size-selection-heading, .select-size-control, .add-pizza-to-cart,
 .contact-details-heading, .contact-labels, .contact-inputs, .payment-inputs {
@@ -318,7 +318,6 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
     padding: 5px 10px;
     font-size: 1rem;
     font-weight: 500;
-    text-shadow: 0 0 1px #000;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 6px;

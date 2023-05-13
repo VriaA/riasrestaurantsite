@@ -26,9 +26,9 @@ const contacttextAreas = contactDetails.querySelectorAll('textarea')
 
 //GETS DATA FROM LOCALSTORAGE
 const savedContactDetails = JSON.parse(localStorage.getItem('contactDetails'))
-let localStorageItems = JSON.parse(localStorage.getItem('savedCart'))
-let originalExistingPizza = JSON.parse(localStorage.getItem('savedPizzas'))
-let savedMode = JSON.parse(localStorage.getItem('riasMode'))
+const localStorageItems = JSON.parse(localStorage.getItem('savedCart'))
+const originalExistingPizza = JSON.parse(localStorage.getItem('savedPizzas'))
+const savedMode = JSON.parse(localStorage.getItem('riasMode'))
 
 //ASSIGNS THE SAVED CART IN LOCAL STORAGE TO CART 
 if (localStorageItems) {
@@ -188,7 +188,7 @@ function getCartItems() {
                                 <form class="cart-item-quatity-control">
                                     <div class="cart-buttons-cntr">
                                     <button type="button" class="add-cart-item cart-buttons" id="add-${cartItem.cartUuid}" data-add="${cartItem.cartUuid}">+</button>
-                                    <input type="number" class="cart-item-quantity" value="${cartItem.count}" disabled>
+                                    <span class="cart-item-quantity">${cartItem.count}</span>
                                     <button type="button" class="decrease-cart-item cart-buttons" id="decrease-cart-item" data-deduct="${cartItem.cartUuid}">-</button>
                                     </div>
                                     
