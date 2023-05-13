@@ -628,7 +628,7 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
 }
 
 .payment-method {
-    font-size: .8rem;
+    font-size: .9rem;
     margin-bottom: 10px;
     font-weight: 900;
 }
@@ -1313,7 +1313,7 @@ appearance: textfield;
     }
 
     .payment-methods-cntr {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .total-price-cntr {
