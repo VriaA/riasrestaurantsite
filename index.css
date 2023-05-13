@@ -1312,8 +1312,8 @@ appearance: textfield;
         padding: 0 0 0 20px;
     }
 
-    .payment-methods-cntr {
-        font-size: .7rem;
+    .payment-method {
+        font-size: .8rem;
     }
 
     .total-price-cntr {
