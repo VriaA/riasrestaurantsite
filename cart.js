@@ -28,7 +28,7 @@ const contacttextAreas = contactDetails.querySelectorAll('textarea')
 const savedContactDetails = JSON.parse(localStorage.getItem('contactDetails'))
 const localStorageItems = JSON.parse(localStorage.getItem('savedCart'))
 const originalExistingPizza = JSON.parse(localStorage.getItem('savedPizzas'))
-const savedMode = JSON.parse(localStorage.getItem('riasMode'))
+let savedMode = JSON.parse(localStorage.getItem('riasMode'))
 
 //ASSIGNS THE SAVED CART IN LOCAL STORAGE TO CART 
 if (localStorageItems) {

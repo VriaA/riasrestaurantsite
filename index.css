@@ -592,13 +592,16 @@ body, .modes-toggle, .body-home, .start-order-btn-cntr,
     justify-content: center;
     width: 15px;
     height: 0px;
-    padding: 7px 5px;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     transition: .2s all ease-in-out;
 }
 .decrease-cart-item {
     padding: 6px 0 8px 0;
+}
+
+.add-cart-item {
+    padding: 7px 1px 7px 1px;
 }
 
 .cart-buttons:hover {
