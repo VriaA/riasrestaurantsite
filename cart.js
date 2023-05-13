@@ -193,7 +193,7 @@ function getCartItems() {
                                     </div>
                                     
                                     <div class="remove-item-cntr">
-                                    <p class="remove-cart-item" id="remove-cart-item" data-remove-item=${cartItem.cartUuid}>remove</p>
+                                    <p class="remove-cart-item" id="remove-cart-item" data-remove-item="${cartItem.cartUuid}">remove</p>
                                     </div>
                                 </form>
                                 
